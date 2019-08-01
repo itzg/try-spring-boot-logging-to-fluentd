@@ -25,3 +25,7 @@ You won't see anything after the initial banner since the only appender configur
 ```
 docker exec try-spring-boot-logging-to-fluentd_fluentd_1 tail -f /fluentd/log/data.log
 ```
+
+# How it works
+
+The logback configuration for fluentd is located in [fluency.xml](src/main/resources/fluency.xml) and that is included by [logback-spring.xml](src/main/resources/logback-spring.xml). That approach to customizing log configuration in Spring Boot is described in the [logging chapter of the Spring Boot reference](https://docs.spring.io/spring-boot/docs/current/reference/html/boot-features-logging.html#boot-features-custom-log-configuration).
