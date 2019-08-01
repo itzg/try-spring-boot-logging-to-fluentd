@@ -1,0 +1,12 @@
+  _____ __ __    __    __    ___  _____ _____ __
+ / ___/|  |  |  /  ]  /  ]  /  _]/ ___// ___/|  |
+(   \_ |  |  | /  /  /  /  /  [_(   \_(   \_ |  |
+ \__  ||  |  |/  /  /  /  |    _]\__  |\__  ||__|
+ /  \ ||  :  /   \_/   \_ |   [_ /  \ |/  \ | __
+ \    ||     \     \     ||     |\    |\    ||  |
+  \___| \__,_|\____|\____||_____| \___| \___||__|
+
+Check fluentd for the actual application logs using:
+
+docker exec try-spring-boot-logging-to-fluentd_fluentd_1 tail -f /fluentd/log/data.log
+
